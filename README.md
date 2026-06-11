@@ -7,7 +7,7 @@ This project uses **Support Vector Machine (SVM)** for model training and is dep
 ## 🌐 Live Demo
 
 You can access the deployed project here:  
-👉 [Prediction of Disease Outbreak - Live](https://prediction-of-disease-outbreak-backend-2.onrender.com/)
+👉 [http://127.0.0.1:5000]
 
 ## 📌 Features
 
