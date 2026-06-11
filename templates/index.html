@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disease Prediction System</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Disease Prediction System</h1>
+    <nav>
+      <ul>
+        <li><button class="tab-btn active" data-target="diabetes">Diabetes</button></li>
+        <li><button class="tab-btn" data-target="heart">Heart</button></li>
+        <li><button class="tab-btn" data-target="parkinsons">Parkinson's</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Diabetes Prediction -->
+    <section id="diabetes" class="tab-content active">
+      <h2>Diabetes Prediction</h2>
+      <form id="diabetesForm">
+        <div class="grid">
+          <input type="number" placeholder="Pregnancies" id="Pregnancies" required>
+          <input type="number" placeholder="Glucose Level" id="Glucose" required>
+          <input type="number" placeholder="Blood Pressure" id="BloodPressure" required>
+          <input type="number" placeholder="Skin Thickness" id="SkinThickness" required>
+          <input type="number" placeholder="Insulin Level" id="Insulin" required>
+          <input type="number" placeholder="BMI" id="BMI" required>
+          <input type="number" step="0.001" placeholder="Diabetes Pedigree Function" id="DPF" required>
+          <input type="number" placeholder="Age" id="Age" required>
+        </div>
+        <button type="submit">Predict</button>
+      </form>
+      <p class="result" id="diabetesResult"></p>
+    </section>
+
+    <!-- Heart Disease Prediction -->
+    <section id="heart" class="tab-content">
+      <h2>Heart Disease Prediction</h2>
+      <form id="heartForm">
+        <div class="grid">
+          <input type="number" placeholder="Age" id="age" required>
+          <select id="sex">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+          </select>
+          <input type="number" placeholder="Chest Pain Type" id="cp" required>
+          <input type="number" placeholder="Resting BP" id="trestbps" required>
+          <input type="number" placeholder="Cholesterol" id="chol" required>
+          <select id="fbs">
+            <option value="1">Fasting Blood Sugar: Yes</option>
+            <option value="0">No</option>
+          </select>
+          <input type="number" placeholder="Resting ECG Result" id="restecg" required>
+          <input type="number" placeholder="Max Heart Rate" id="thalach" required>
+          <select id="exang">
+            <option value="1">Exercise Induced Angina: Yes</option>
+            <option value="0">No</option>
+          </select>
+          <input type="number" step="0.1" placeholder="ST Depression" id="oldpeak" required>
+          <input type="number" placeholder="Slope" id="slope" required>
+          <input type="number" placeholder="Number of Major Vessels" id="ca" required>
+          <input type="number" placeholder="Thal (0–3)" id="thal" required>
+        </div>
+        <button type="submit">Predict</button>
+      </form>
+      <p class="result" id="heartResult"></p>
+    </section>
+
+    <!-- Parkinson's Prediction -->
+    <section id="parkinsons" class="tab-content">
+      <h2>Parkinson's Prediction</h2>
+      <form id="parkinsonsForm">
+        <div class="grid">
+          <input type="number" step="0.001" placeholder="MDVP:Fo(Hz)" id="MDVPFo" required>
+          <input type="number" step="0.001" placeholder="MDVP:Fhi(Hz)" id="MDVPFhi" required>
+          <input type="number" step="0.001" placeholder="MDVP:Flo(Hz)" id="MDVPFlo" required>
+          <input type="number" step="0.00001" placeholder="MDVP:Jitter(%)" id="MDVPJitter" required>
+          <input type="number" step="0.00001" placeholder="MDVP:Jitter(Abs)" id="MDVPJitterAbs" required>
+          <input type="number" step="0.00001" placeholder="MDVP:RAP" id="MDVPRAP" required>
+          <input type="number" step="0.00001" placeholder="MDVP:PPQ" id="MDVPPPQ" required>
+          <input type="number" step="0.00001" placeholder="Jitter:DDP" id="JitterDDP" required>
+          <input type="number" step="0.00001" placeholder="MDVP:Shimmer" id="MDVPShimmer" required>
+          <input type="number" step="0.001" placeholder="MDVP:Shimmer(dB)" id="MDVPShimmerdB" required>
+          <input type="number" step="0.00001" placeholder="Shimmer:APQ3" id="ShimmerAPQ3" required>
+          <input type="number" step="0.00001" placeholder="Shimmer:APQ5" id="ShimmerAPQ5" required>
+          <input type="number" step="0.00001" placeholder="MDVP:APQ" id="MDVPAPQ" required>
+          <input type="number" step="0.00001" placeholder="Shimmer:DDA" id="ShimmerDDA" required>
+          <input type="number" step="0.00001" placeholder="NHR" id="NHR" required>
+          <input type="number" step="0.001" placeholder="HNR" id="HNR" required>
+          <input type="number" step="0.000001" placeholder="RPDE" id="RPDE" required>
+          <input type="number" step="0.000001" placeholder="DFA" id="DFA" required>
+          <input type="number" step="0.00001" placeholder="Spread1" id="spread1" required>
+          <input type="number" step="0.000001" placeholder="Spread2" id="spread2" required>
+          <input type="number" step="0.000001" placeholder="D2" id="D2" required>
+          <input type="number" step="0.000001" placeholder="PPE" id="PPE" required>
+        </div>
+        <button type="submit">Predict</button>
+      </form>
+      <p class="result" id="parkinsonsResult"></p>
+    </section>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
