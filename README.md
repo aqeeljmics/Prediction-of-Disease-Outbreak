@@ -107,7 +107,7 @@ disease-prediction/
 - Extend prediction to more diseases
 
 ### 🏆 Credits
-- 👨‍💻 Developed by Sabhya Aqeel Ahmad, Ramishwar Gautam, Tahir Ansari
+- 👨‍💻 Developed by Aqeel Ahmad, Ramishwar Gautam, Tahir Ansari
 
 - 🎓 Part of B.Tech. Major Project
 
